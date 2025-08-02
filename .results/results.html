@@ -1,0 +1,192 @@
+<html lang="en"><head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>ccbp test reporter</title>
+      <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/522ee478c4.js" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js"></script>
+      <script src="js/view.js"></script>
+    </head><body><div id="test-results">{
+  &quot;test_case_results&quot;: [
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_1&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;Page should consist of at least two HTML list items and the teams list received in the response should be rendered using a unique key as a prop for each team card item&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_2&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;Home Route should consist of an HTML main heading element with text content as \&quot;IPL Dashboard\&quot;&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_3&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;Home Route should consist of an HTML image element with alt attribute value as \&quot;ipl logo\&quot; and src attribute value as the URL for IPL Logo image&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_4&quot;,
+      &quot;evaluation_result&quot;: &quot;INCORRECT&quot;,
+      &quot;title&quot;: &quot;When the Home Route is opened, it should initially consist of an HTML container element with testid attribute value as \&quot;loader\&quot;&quot;,
+      &quot;errorMessages&quot;: [
+        &quot;The element(s) given to waitForElementToBeRemoved are already removed. waitForElementToBeRemoved requires that the element(s) exist(s) before waiting for removal.&quot;
+      ]
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_5&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When the Home Route is opened, an HTTP GET request should be made to the given teamsApiUrl to get the list of IPL teams&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_6&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When the HTTP GET request made in Home Route is successful, then the page should consist of HTML paragraph elements with text content equal to the \&quot;name\&quot; in teams received in the response&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_7&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When the HTTP GET request made in Home Route is successful, then the page should consist of HTML image elements with alt and src values equal to the \&quot;name\&quot; and \&quot;team_image_url\&quot; in teams received in the response&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_8&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When a team card is clicked in Home Route, then the page should be navigated to the Team Matches Route with \&quot;/team-matches/:id\&quot; in the URL&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_9&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When a \&quot;/bad-path\&quot; is provided in the URL, then the page should be navigated to Not Found Route and consist of an HTML heading element with text content as \&quot;Page Not Found\&quot;&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_10&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;Page should consist of at least eight team cards wrapped with the Link from react-router&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_11&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;Page should consist of at least two HTML list items and the recent matches list received in the response should be rendered using a unique key as a prop for each recent match&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_12&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When the HTTP GET request made in Team Matches Route is successful, then the page should consist of an HTML paragraph element with text content equal to the \&quot;umpires\&quot; in latest match details received in the response&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_13&quot;,
+      &quot;evaluation_result&quot;: &quot;INCORRECT&quot;,
+      &quot;title&quot;: &quot;When the Team Matches Route is opened, it should initially contain an HTML container element with testid attribute value as \&quot;loader\&quot;&quot;,
+      &quot;errorMessages&quot;: [
+        &quot;The element(s) given to waitForElementToBeRemoved are already removed. waitForElementToBeRemoved requires that the element(s) exist(s) before waiting for removal.&quot;
+      ]
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_14&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When the Team Matches Route is opened, an HTTP GET request should be made to the given teamMatchesApiUrl to get recent matches based on the team selected&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_15&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When the HTTP GET request made in Team Matches Route is successful, then the page should consist of an HTML image element with alt as \&quot;team banner\&quot; and src value equal to the \&quot;team_banner_url\&quot; received in the response&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_16&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When the HTTP GET request made in Team Matches Route is successful, then the page should consist of an HTML paragraph element with text content equal to the \&quot;competing_team\&quot; in latest match details received in the response&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_17&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When the HTTP GET request made in Team Matches Route is successful, then the page should consist of an HTML paragraph element with text content equal to the \&quot;date\&quot; in latest match details received in the response&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_18&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When the HTTP GET request made in Team Matches Route is successful, then the page should consist of an HTML paragraph element with text content equal to the \&quot;venue\&quot; in latest match details received in the response&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_19&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When the HTTP GET request made in Team Matches Route is successful, then the page should consist of an HTML paragraph element with text content equal to the \&quot;result\&quot; in latest match details received in the response&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_20&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When the HTTP GET request made in Team Matches Route is successful, then the page should consist of HTML image element with alt value as \&quot;latest match {competing_team}\&quot; and src value equal to the \&quot;competing_team_logo\&quot; in latest match details received in response&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_21&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When the HTTP GET request made in Team Matches Route is successful, then the page should consist of HTML paragraph element with text content equal to the \&quot;first_innings\&quot; in latest match details received in the response&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_22&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When the HTTP GET request made in Team Matches Route is successful, then the page should consist of an HTML paragraph element with text content equal to the \&quot;second_innings\&quot; in latest match details received in the response&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_23&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When the HTTP GET request made in Team Matches Route is successful, then the page should consist of an HTML paragraph element with text content equal to the \&quot;man_of_the_match\&quot; in latest match details received in the response&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_24&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When the HTTP GET request made in Team Matches Route is successful, then the page should consist of HTML image elements with alt as \&quot;competing team {competing_team}\&quot; and src value equal to the \&quot;competing_team_logo\&quot; in recent matches received in response&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_25&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When the HTTP GET request made in Team Matches Route is successful, then the page should consist of HTML paragraph elements with text content equal to the \&quot;competing_team\&quot; in recent matches received in the response&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_26&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When the HTTP GET request made in Team Matches Route is successful, then the page should consist of HTML paragraph elements with text content equal to the \&quot;result\&quot; in recent matches received in the response&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_27&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When the HTTP GET request made in Team Matches Route is successful, then the page should consist of HTML paragraph elements with text content equal to the \&quot;match_status\&quot; in recent matches received in the response&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_28&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When \&quot;/team-matches/:id\&quot; is provided in the URL, then the page should be navigated to the Team Matches Route and consists of the respective umpire names&quot;,
+      &quot;errorMessages&quot;: []
+    },
+    {
+      &quot;test_case_id&quot;: &quot;RJSCPM0NCX_TEST_29&quot;,
+      &quot;evaluation_result&quot;: &quot;CORRECT&quot;,
+      &quot;title&quot;: &quot;When the Team Matches Route is opened and back is clicked in the browser, then the page should be navigated to the Home Route&quot;,
+      &quot;errorMessages&quot;: []
+    }
+  ]
+}</div></body></html>
