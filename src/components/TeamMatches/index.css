@@ -1,1 +1,87 @@
-/* Write your CSS here */
+.team-matches-container {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #0a192f, #112240);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px 50px;
+  box-sizing: border-box;
+  color: #f8f9fa;
+}
+.team-banner {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  object-fit: cover;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.team-matches-container h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffd60a;
+  margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  animation: fadeUp 1s ease-in-out;
+}
+
+.recent-matches-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 25px;
+  padding: 0;
+  list-style: none;
+  animation: fadeUp 1.2s ease-in-out;
+}
+.team-matches-container .beat-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .team-banner {
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .team-matches-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .recent-matches-list {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+  }
+}
