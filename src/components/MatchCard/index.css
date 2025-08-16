@@ -1,0 +1,90 @@
+.match-card {
+  background: linear-gradient(135deg, #1b263b, #0d1b2a);
+  border-radius: 12px;
+  padding: 18px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #f8f9fa;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+  list-style: none;
+}
+.match-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.45);
+}
+.match-card-logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.match-card:hover .match-card-logo {
+  transform: scale(1.08);
+}
+.competing-team-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffd60a;
+  margin-top: 5px;
+}
+.match-result {
+  font-size: 0.95rem;
+  color: #e0e1dd;
+  margin: 4px 0;
+}
+.match-status {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 6px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.match-status::before {
+  content: '● ';
+  font-size: 1.2rem;
+}
+.match-status.win {
+  color: #06d6a0;
+}
+
+.match-status.lose {
+  color: #ef476f;
+}
+
+@media (max-width: 768px) {
+  .match-card {
+    padding: 15px 12px;
+  }
+
+  .match-card-logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .competing-team-name {
+    font-size: 1rem;
+  }
+
+  .match-result {
+    font-size: 0.85rem;
+  }
+
+  .match-status {
+    font-size: 0.9rem;
+  }
+}
